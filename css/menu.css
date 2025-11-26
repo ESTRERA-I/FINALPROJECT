@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Beige background */
+    color: #8b4513; /* Brown text */
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #8b4513;
+}
+a {
+    color: #8b4513;
+    text-decoration: none;
+}
+a:hover {
+    color: #daa520; /* Golden accent on hover */
+}
+/* Header */
+header {
+    background-color: #f5f5dc;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #8b4513;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+}
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x400?text=Korean+Food+Banner'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.5em;
+    color: black;
+}
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about, .menu, .contact {
+    background-color: #fffaf0; /* Light beige */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.menu-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #8b4513;
+    border-radius: 10px;
+}
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #8b4513;
+    border-radius: 5px;
+}
+button {
+    background-color: #8b4513;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #daa520;
+}
+/* Footer */
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrs. K Samgyeopsal Korean Restaurant</title>
+    <link rel="stylesheet" href="../FINALPROJECT/css/menu.css">
+
+</head>
+<body>
+    <header>
+        <h1>Mrs. K Samgyeopsal Korean Restaurant</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to Mrs. K's</h1>
+            <p>Authentic Korean Flavors in Every Bite</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Mrs. K Samgyeopsal Korean Restaurant specializes in traditional Korean cuisine, with a focus on our signature samgyeopsal (grilled pork belly). Our warm, family-run establishment brings the heart of Korea to your table, using fresh ingredients and time-honored recipes. Come experience the floral-inspired ambiance and indulge in dishes that celebrate Korean culture.</p>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="../FINALPROJECT/img/Image2.jpg" alt="Samgyeopsal">
+                <h3>Samgyeopsal</h3>
+                <p>Grilled pork belly served with lettuce wraps and banchan. $18</p>
+            </div>
+            <div class="menu-item">
+                <img src="../FINALPROJECT/img/Image2.jpg" alt="Bibimbap">
+                <h3>Bibimbap</h3>
+                <p>Mixed rice bowl with vegetables, meat, and gochujang. $15</p>
+            </div>
+            <div class="menu-item">
+                <img src="../FINALPROJECT/img/Image2.jpg" alt="Kimbap">
+                <h3>Kimbap</h3>
+                <p>Seaweed rice rolls with various fillings. $12</p>
+            </div>
+            <div class="menu-item">
+                <img src= "../FINALPROJECT/img/Image2.jpg" alt="Kimchi Jjigae">
+                <h3>Kimchi Jjigae</h3>
+                <p>Spicy kimchi stew with tofu and pork. $14</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Visit us at 29b Richrose bldg, P. Gomez, St, Laoag City Ilocos Norte, or call 09177200658.</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mrs. K Samgyeopsal Korean Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Basic JavaScript for form submission (alert for simplicity)
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert("Thank you, ${name}? Your message has been sent.");
+            // In a real site, you'd send this to a server
+            document.getElementById('contactForm').reset();
+        });
+
+        // Simple menu item hover effect (basic interactivity)
+        const menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'scale(1.05)';
+                item.style.transition = 'transform 0.3s';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
