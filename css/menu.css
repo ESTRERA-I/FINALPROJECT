@@ -3,18 +3,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5dc; /* Beige background */
-    color: #8b4513; /* Brown text */
+    color: lightsalmon; /* gold text*/
     line-height: 1.6;
 }
 h1, h2, h3 {
-    color: #8b4513;
+    color: black;
 }
 a {
-    color: #8b4513;
+    color: salmon;
     text-decoration: none;
 }
 a:hover {
-    color: #daa520; /* Golden accent on hover */
+    color: black; /* Golden accent on hover */
 }
 /* Header */
 header {
@@ -32,7 +32,7 @@ nav a {
 }
 /* Hero Section */
 .hero {
-    background-image: url('https://via.placeholder.com/1200x400?text=Korean+Food+Banner'); /* Placeholder image */
+    background-image: url(../img/a3c17c83-bdf8-41dd-8414-84175bcf8e3c.j); /* Placeholder image */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -49,7 +49,6 @@ nav a {
 }
 .hero p {
     font-size: 1.5em;
-    color: black;
 }
 /* Sections */
 section {
@@ -71,7 +70,7 @@ section {
 .menu-item {
     text-align: center;
     padding: 20px;
-    border: 1px solid #8b4513;
+    border: 1px solid blue;
     border-radius: 10px;
 }
 .menu-item img {
@@ -90,7 +89,7 @@ form {
 input, textarea {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #8b4513;
+    border: 1px solid black;
     border-radius: 5px;
 }
 button {
@@ -102,11 +101,11 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #daa520;
+    background-color: black;
 }
 /* Footer */
 footer {
-    background-color: #8b4513;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
